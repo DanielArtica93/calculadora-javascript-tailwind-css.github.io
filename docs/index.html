@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Javascript - Tailwind CSS</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+
+        <!-- Nombre de la App -->
+        <div class="pb-2 pt-2 text-center">
+            <h1 class="sm:text-5xl text-center text-green-600">Calculadora</h1>
+        </div>
+
+        <!-- Campo que funciona como pantalla en la App -->
+        <div class="pb-2 text-center">
+            <input type="text" id="display" class="xs:py-1 xs:px-1 sm:py-7 px-2 sm:px-7 rounded-full text-center border border-blue-500 hover:border-orange-600" readonly>
+        </div>        
+        
+        <!-- Primera fila de la App -->
+        <div class="pb-2 text-center">
+            <button data-action="borrarCaracterDeLaIzquierda" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-red-400 border-2 rounded-full">Borrar</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-green-500 border-2 rounded-full">%</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-green-500 border-2 rounded-full">/</button>
+        </div>
+
+        <!-- Segunda fila de la App -->
+        <div class="pt-2 pb-2 text-center">
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">7</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">8</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">9</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-green-500 border-2 rounded-full">*</button>
+        </div>
+        
+        <!-- Tercera fila de la App -->
+        <div class="pt-2 pb-2 text-center">
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">4</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">5</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">6</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-green-500 border-2 rounded-full">-</button>
+        </div>
+
+        <!-- Cuarta fila de la App -->
+        <div class="pt-2 pb-2 text-center">
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">1</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">2</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">3</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-green-500 border-2 rounded-full">+</button>
+        </div>
+
+        <!-- Quinta fila de la App -->
+        <div class="pt-2 pb-2 text-center">
+            <button data-action="borrarTodo" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-white bg-red-500 border-2 rounded-full">C</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">0</button>
+            <button data-action="agregar" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-black border-2 rounded-full">.</button>
+            <button data-action="calcular" class="boton-calculadora px-2 sm:px-7 sm:py-5 mr-4 sm:text-3xl text-white bg-green-400 border-2 rounded-full">=</button>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
